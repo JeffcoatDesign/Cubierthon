@@ -16,7 +16,7 @@ public class KinematicFlee : MovementBehaviour
 
     void Update()
     {
-        m_rb.velocity = GetSteering().velocity * 1000 * Time.deltaTime;
+        m_rb.velocity = GetSteering().velocity;
     }
 
     protected override KinematicSteeringOutput GetSteering()
